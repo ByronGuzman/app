@@ -25,14 +25,14 @@ class SecundPage extends StatelessWidget {
             TextReusable(
                 miTextoReusable: "Diario",
                 miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            MyStatelessWidget(),
+            MyCard(),
             TextReusable(
                 miTextoReusable: "Nombre",
                 miStiloDeTextoReusable: TextStyle(fontSize: 25)),
             TextReusable(
                 miTextoReusable: "Semanal",
                 miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            MyStatelessWidget(),
+            MyCard(),
             TextReusable(
                 miTextoReusable: "Nombre",
                 miStiloDeTextoReusable: TextStyle(fontSize: 25)),
@@ -125,35 +125,25 @@ class miRectangleViewContainer extends StatelessWidget {
   }
 }
 
-// class ElevatedButtonTest extends StatelessWidget {
-//   const ElevatedButtonTest({Key? key}) : super(key: key);
+class MyCard extends StatelessWidget {
+  const MyCard({Key? key}) : super(key: key);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: "Mi App",
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: Text("ListView"),
-//         ),
-//         body: ListView(
-//           children: [
-//             Container(
-//               width: 100, 
-//               height: 100,
-//             )
-//           ],
-//         ),
-//         floatingActionButton: FloatingActionButton(
-//             child: Icon(Icons.add),
-//             onPressed: () {
-//               setState(() {
-//                 tareas.add(widget.nuevaTarea);
-
-//                 print(tareas.length);
-//               });
-//             }),
-//       ),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Card(
+        child: InkWell(
+          splashColor: Colors.blue.withAlpha(30),
+          onTap: () {
+            debugPrint('Card tapped.');
+          },
+          child: const SizedBox(
+            width: 154.62,
+            height: 199.94,
+            child: Text("A card that can be tapped"),
+          ),
+        ),
+      ),
+    );
+  }
+}

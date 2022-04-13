@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
-class informesWidget extends StatelessWidget {
-  const informesWidget({Key? key}) : super(key: key);
+class Testing extends StatelessWidget {
+  const Testing({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+class BodyTheAndroid extends StatelessWidget {
+  const BodyTheAndroid({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +20,7 @@ class informesWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             SizedBox(height: 16),
-            MyStatelessWidget(),
+            TextoReusableParaElModeloDeAndroid(),
           ],
         ),
       ),
@@ -19,24 +28,23 @@ class informesWidget extends StatelessWidget {
   }
 }
 
-class containerPage extends StatelessWidget {
-  const containerPage({Key? key, required this.micolor2}) : super(key: key);
+class TextoReusableParaElModeloDeAndroid extends StatelessWidget {
+  const TextoReusableParaElModeloDeAndroid({Key? key, required this.TextoAndroid}) : super(key: key);
 
-  final Color micolor2;
+final String TextoAndroid;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      // decoration: BoxDecoration(border: Border.all()),
-      width: 900,
-      height: 500,
-      color: micolor2,
+    return Text(
+      TextoAndroid
     );
   }
 }
 
-class MyStatelessWidget extends StatelessWidget {
-  const MyStatelessWidget({Key? key}) : super(key: key);
+// Card
+
+class TarjetaDeLaView extends StatelessWidget {
+  const TarjetaDeLaView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
