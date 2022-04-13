@@ -20,7 +20,7 @@ class BodyTheAndroid extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             SizedBox(height: 16),
-            TextoReusableParaElModeloDeAndroid(),
+            // TextoReusableParaElModeloDeAndroid(),
           ],
         ),
       ),
@@ -29,15 +29,15 @@ class BodyTheAndroid extends StatelessWidget {
 }
 
 class TextoReusableParaElModeloDeAndroid extends StatelessWidget {
-  const TextoReusableParaElModeloDeAndroid({Key? key, required this.TextoAndroid}) : super(key: key);
+  const TextoReusableParaElModeloDeAndroid(
+      {Key? key, required this.TextoAndroid})
+      : super(key: key);
 
-final String TextoAndroid;
+  final String TextoAndroid;
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      TextoAndroid
-    );
+    return Text(TextoAndroid);
   }
 }
 

@@ -15,27 +15,141 @@ class SecundPage extends StatelessWidget {
       child: Center(
         child: Column(
           children: <Widget>[
-            TextReusable(
-                miTextoReusable: "Informe",
-                miStiloDeTextoReusable: TextStyle(fontSize: 40)),
-            MiBotonReusable(miSegundoTextoReusable: "Generar Informe"),
+            Row(
+              children: [
+                SizedBox(width: 28),
+                TextReusable(
+                    miTextoReusable: "Informe",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 40)),
+                SizedBox(width: 900),
+                MiBotonReusable(miSegundoTextoReusable: "Generar Informe"),
+              ],
+            ),
             MiTextFielReusable(
-                miTerceroTextoReusable: "producto",
-                miPrimerColorReusable: Color.fromRGBO(118, 118, 128, 1)),
-            TextReusable(
-                miTextoReusable: "Diario",
-                miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            MyCard(),
-            TextReusable(
-                miTextoReusable: "Nombre",
-                miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            TextReusable(
-                miTextoReusable: "Semanal",
-                miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            MyCard(),
-            TextReusable(
-                miTextoReusable: "Nombre",
-                miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+              miTerceroTextoReusable: "producto",
+              miPrimerColorReusable: Color.fromRGBO(
+                118,
+                118,
+                128,
+                1,
+              ),
+              Size: 1162,
+              bordeReusableDeLosTextFiled: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  hintText: "Producto",
+                  fillColor: Color.fromRGBO(118, 118, 128, 1),
+                  filled: true),
+            ),
+            SizedBox(height: 30),
+            Row(
+              children: [
+                SizedBox(width: 27),
+                TextReusable(
+                    miTextoReusable: "Diario",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+              ],
+            ),
+            SizedBox(height: 20),
+            Row(
+              children: [
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+              ],
+            ),
+            Row(
+              children: [
+                SizedBox(width: 91),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+              ],
+            ),
+            SizedBox(height: 57),
+            Row(
+              children: [
+                SizedBox(width: 30),
+                TextReusable(
+                    miTextoReusable: "Semanal",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+              ],
+            ),
+            Row(
+              children: [
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+                MyCard(),
+                SizedBox(width: 30),
+              ],
+            ),
+            Row(
+              children: [
+                SizedBox(width: 91),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+                SizedBox(width: 135),
+                TextReusable(
+                    miTextoReusable: "Nombre",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+              ],
+            ),
           ],
         ),
       ),
@@ -44,15 +158,14 @@ class SecundPage extends StatelessWidget {
 }
 
 class TextReusable extends StatelessWidget {
-  const TextReusable(
-      {Key? key,
-      required this.miTextoReusable,
-      required this.miStiloDeTextoReusable})
-      : super(key: key);
+  const TextReusable({
+    Key? key,
+    required this.miTextoReusable,
+    required this.miStiloDeTextoReusable,
+  }) : super(key: key);
 
   final String miTextoReusable;
   final TextStyle miStiloDeTextoReusable;
-  // final  miColorReusableDelTexto;
 
   @override
   Widget build(BuildContext context) {
@@ -81,25 +194,30 @@ class MiBotonReusable extends StatelessWidget {
 }
 
 class MiTextFielReusable extends StatelessWidget {
-  const MiTextFielReusable(
+  MiTextFielReusable(
       {Key? key,
       required this.miTerceroTextoReusable,
-      required this.miPrimerColorReusable})
+      required this.miPrimerColorReusable,
+      required this.Size,
+      required this.bordeReusableDeLosTextFiled})
       : super(key: key);
 
   final String miTerceroTextoReusable;
   final Color miPrimerColorReusable;
+  double Size;
+  final InputDecoration bordeReusableDeLosTextFiled;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 500,
+      width: Size,
       height: 40,
       child: TextField(
-        decoration: InputDecoration(
-            hintText: miTerceroTextoReusable,
-            fillColor: miPrimerColorReusable,
-            filled: true),
+        decoration: bordeReusableDeLosTextFiled,
+        // decoration: InputDecoration(
+        //     hintText: miTerceroTextoReusable,
+        //     fillColor: miPrimerColorReusable,
+        //     filled: true),
       ),
     );
   }
@@ -140,7 +258,7 @@ class MyCard extends StatelessWidget {
           child: const SizedBox(
             width: 154.62,
             height: 199.94,
-            child: Text("A card that can be tapped"),
+            child: Text("Reports View"),
           ),
         ),
       ),
