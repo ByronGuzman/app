@@ -56,12 +56,3 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     );
   }
 }
-
-class pruebadelalistVIew extends StatelessWidget {
-  const pruebadelalistVIew({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}

@@ -51,23 +51,7 @@ class SecundPage extends StatelessWidget {
               ],
             ),
             SizedBox(height: 20),
-            Row(
-              children: [
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-              ],
-            ),
+            Scroll(),
             Row(
               children: [
                 SizedBox(width: 91),
@@ -105,23 +89,7 @@ class SecundPage extends StatelessWidget {
                     miStiloDeTextoReusable: TextStyle(fontSize: 25)),
               ],
             ),
-            Row(
-              children: [
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-                MyCard(),
-                SizedBox(width: 30),
-              ],
-            ),
+            Scroll(),
             Row(
               children: [
                 SizedBox(width: 91),

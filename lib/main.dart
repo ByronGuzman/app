@@ -1,4 +1,5 @@
 import 'package:app/pages/Login.dart';
+import 'package:app/pages/Scroll.dart';
 import 'package:app/pages/bienvenido.dart';
 import 'package:app/pagesdos/informes.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
         "login": ((context) => const Login()),
         "bienvenido": ((context) => const bienvenido()),
         "informes": (context) => const informes(),
+        // "Scroll": (context) => const Scroll()
       },
     );
   }
