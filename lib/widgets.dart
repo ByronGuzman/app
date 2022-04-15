@@ -6,7 +6,7 @@ Widget cuerpo() {
     decoration: BoxDecoration(
       image: DecorationImage(
           image: NetworkImage(
-              "https://p4.wallpaperbetter.com/wallpaper/356/443/688/doctor-who-tardis-wallpaper-preview.jpg"),
+              "https://w0.peakpx.com/wallpaper/523/494/HD-wallpaper-tardis-2-control-room-doctor-who.jpg"),
           fit: BoxFit.cover),
     ),
     child: Center(

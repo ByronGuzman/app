@@ -151,7 +151,7 @@ class MiBotonReusable extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: RaisedButton(
-        onPressed: () => Navigator.pushNamed(context, "informes"),
+        onPressed: () {},
         child: Text(miSegundoTextoReusable),
       ),
     );
@@ -217,9 +217,7 @@ class MyCard extends StatelessWidget {
       child: Card(
         child: InkWell(
           splashColor: Colors.blue.withAlpha(30),
-          onTap: () {
-            debugPrint('Card tapped.');
-          },
+          onTap: () => Navigator.pushNamed(context, "informes"),
           child: const SizedBox(
             width: 154.62,
             height: 199.94,

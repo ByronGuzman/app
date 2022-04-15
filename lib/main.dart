@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         "login": ((context) => const Login()),
         "bienvenido": ((context) => const bienvenido()),
         "informes": (context) => const informes(),
-        // "Scroll": (context) => const Scroll()
+        "Scroll": (context) => const informes()
       },
     );
   }
