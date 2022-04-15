@@ -1,3 +1,4 @@
+import 'package:app/pages/BienvenidoWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -7,6 +8,7 @@ class Scroll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
+      flex: 1,
       child: GridView(
         scrollDirection: Axis.horizontal,
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
@@ -16,78 +18,18 @@ class Scroll extends StatelessWidget {
         primary: false,
         padding: const EdgeInsets.all(20),
         children: [
-          Container(
-            width: 154.62,
-            height: 199.94,
-            padding: const EdgeInsets.all(14),
-            child: const Text("He'd have you all unravel at the"),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Heed not the rabble'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Sound of screams but the'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Who scream'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution is coming...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
-          Container(
-            padding: const EdgeInsets.all(14),
-            child: const Text('Revolution, they...'),
-            color: CupertinoColors.lightBackgroundGray,
-          ),
+          MyCard(),
+          Text("Nombre"),
+          MyCard(),
+          Text("Nombre"),
+          MyCard(),
+          Text("Nombre"),
+          MyCard(),
+          Text("Nombre"),
+          MyCard(),
+          Text("Nombre"),
+          MyCard(),
+          Text("Nombre"),
         ],
       ),
     );

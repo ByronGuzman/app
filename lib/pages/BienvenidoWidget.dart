@@ -15,16 +15,13 @@ class SecundPage extends StatelessWidget {
       child: Center(
         child: Column(
           children: <Widget>[
-            Row(
-              children: [
-                SizedBox(width: 28),
-                TextReusable(
-                    miTextoReusable: "Informe",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 40)),
-                SizedBox(width: 900),
-                MiBotonReusable(miSegundoTextoReusable: "Generar Informe"),
-              ],
-            ),
+            SizedBox(width: 28),
+            TextReusable(
+                miTextoReusable: "Informe",
+                miStiloDeTextoReusable: TextStyle(fontSize: 40)),
+            // SizedBox(width: 900),
+            (MiBotonReusable(miSegundoTextoReusable: "Generar Informe")),
+
             MiTextFielReusable(
               miTerceroTextoReusable: "producto",
               miPrimerColorReusable: Color.fromRGBO(
@@ -52,34 +49,34 @@ class SecundPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Scroll(),
-            Row(
-              children: [
-                SizedBox(width: 91),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-              ],
-            ),
+            // Row(
+            //   children: [
+            //     SizedBox(width: 91),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //   ],
+            // ),
             SizedBox(height: 57),
             Row(
               children: [
@@ -90,34 +87,34 @@ class SecundPage extends StatelessWidget {
               ],
             ),
             Scroll(),
-            Row(
-              children: [
-                SizedBox(width: 91),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-                SizedBox(width: 135),
-                TextReusable(
-                    miTextoReusable: "Nombre",
-                    miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-              ],
-            ),
+            // Row(
+            //   children: [
+            //     SizedBox(width: 91),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //     SizedBox(width: 135),
+            //     TextReusable(
+            //         miTextoReusable: "Nombre",
+            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
+            //   ],
+            // ),
           ],
         ),
       ),
