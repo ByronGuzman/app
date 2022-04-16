@@ -18,9 +18,11 @@ class SecundPage extends StatelessWidget {
             SizedBox(width: 28),
             Row(
               children: [
+                SizedBox(width: 15),
                 TextReusable(
                     miTextoReusable: "Informe",
                     miStiloDeTextoReusable: TextStyle(fontSize: 40)),
+                SizedBox(width: 150),
                 MiBotonReusable(miSegundoTextoReusable: "Generar Informe"),
               ],
             ),
@@ -32,12 +34,12 @@ class SecundPage extends StatelessWidget {
                 128,
                 1,
               ),
-              Size: 1162,
+              Size: 350,
               bordeReusableDeLosTextFiled: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10)),
                   hintText: "Producto",
-                  fillColor: Color.fromRGBO(118, 118, 128, 1),
+                  fillColor: Color.fromRGBO(207, 207, 207, 1),
                   filled: true),
             ),
             SizedBox(height: 10),
@@ -96,8 +98,10 @@ class MiBotonReusable extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: RaisedButton(
+        color: Color.fromRGBO(5, 35, 134, 1),
         onPressed: () {},
-        child: Text(miSegundoTextoReusable),
+        child:
+            Text(miSegundoTextoReusable, style: TextStyle(color: Colors.white)),
       ),
     );
   }
@@ -167,7 +171,7 @@ class MyCard extends StatelessWidget {
               onTap: () => Navigator.pushNamed(context, "informes"),
               child: const SizedBox(
                 width: 154.62,
-                height: 199,
+                height: 180,
                 child: Text("Reporte del dia \n elaborado por BJ"),
               ),
             ),
