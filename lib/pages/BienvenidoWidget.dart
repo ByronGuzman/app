@@ -16,12 +16,14 @@ class SecundPage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             SizedBox(width: 28),
-            TextReusable(
-                miTextoReusable: "Informe",
-                miStiloDeTextoReusable: TextStyle(fontSize: 40)),
-            // SizedBox(width: 900),
-            (MiBotonReusable(miSegundoTextoReusable: "Generar Informe")),
-
+            Row(
+              children: [
+                TextReusable(
+                    miTextoReusable: "Informe",
+                    miStiloDeTextoReusable: TextStyle(fontSize: 40)),
+                MiBotonReusable(miSegundoTextoReusable: "Generar Informe"),
+              ],
+            ),
             MiTextFielReusable(
               miTerceroTextoReusable: "producto",
               miPrimerColorReusable: Color.fromRGBO(
@@ -38,7 +40,7 @@ class SecundPage extends StatelessWidget {
                   fillColor: Color.fromRGBO(118, 118, 128, 1),
                   filled: true),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 10),
             Row(
               children: [
                 SizedBox(width: 27),
@@ -47,37 +49,8 @@ class SecundPage extends StatelessWidget {
                     miStiloDeTextoReusable: TextStyle(fontSize: 25)),
               ],
             ),
-            SizedBox(height: 20),
+            // SizedBox(height: 10),
             Scroll(),
-            // Row(
-            //   children: [
-            //     SizedBox(width: 91),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //   ],
-            // ),
-            SizedBox(height: 57),
             Row(
               children: [
                 SizedBox(width: 30),
@@ -87,34 +60,6 @@ class SecundPage extends StatelessWidget {
               ],
             ),
             Scroll(),
-            // Row(
-            //   children: [
-            //     SizedBox(width: 91),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //     SizedBox(width: 135),
-            //     TextReusable(
-            //         miTextoReusable: "Nombre",
-            //         miStiloDeTextoReusable: TextStyle(fontSize: 25)),
-            //   ],
-            // ),
           ],
         ),
       ),
@@ -214,16 +159,23 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Card(
-        child: InkWell(
-          splashColor: Colors.blue.withAlpha(30),
-          onTap: () => Navigator.pushNamed(context, "informes"),
-          child: const SizedBox(
-            width: 154.62,
-            height: 199.94,
-            child: Text("Reports View"),
+      child: Column(
+        children: [
+          Card(
+            child: InkWell(
+              splashColor: Colors.blue.withAlpha(30),
+              onTap: () => Navigator.pushNamed(context, "informes"),
+              child: const SizedBox(
+                width: 154.62,
+                height: 199,
+                child: Text("Reporte del dia \n elaborado por BJ"),
+              ),
+            ),
           ),
-        ),
+          TextReusable(
+              miTextoReusable: "Nombre",
+              miStiloDeTextoReusable: TextStyle(fontSize: 10))
+        ],
       ),
     );
   }
